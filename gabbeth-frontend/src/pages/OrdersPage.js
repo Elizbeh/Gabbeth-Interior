@@ -40,7 +40,7 @@ function OrdersPage() {
             <Table responsive striped bordered hover>
                 <thead>
                     <tr>
-                        <th>#</th>
+                        <th>ID</th>
                         <th>Status</th>
                         <th>Date</th>
                         <th>Total</th>

@@ -58,8 +58,8 @@ function EditProductPage() {
     function showWidget() {
         const widget = window.cloudinary.createUploadWidget(
             {
-                cloudName: "your-cloudname",
-                uploadPreset: "your-preset",
+                cloudName: "dzp75bobt",
+                uploadPreset: "k4tadjpp",
             },
             (error, result) => {
                 if (!error && result.event === "success") {
@@ -99,10 +99,10 @@ function EditProductPage() {
                                 <option disabled selected>
                                     -- Select One --
                                 </option>
-                                <option value="technology">technology</option>
-                                <option value="tablets">tablets</option>
-                                <option value="phones">phones</option>
-                                <option value="laptops">laptops</option>
+                                <option value="residential">residential</option>
+                                <option value="office">office</option>
+                                <option value="commercial">commercial</option>
+                    
                             </Form.Select>
                         </Form.Group>
 

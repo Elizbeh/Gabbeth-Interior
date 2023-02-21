@@ -31,6 +31,7 @@ export const appApi = createApi({
       }),
   }),
 
+  // delete product
   deleteProduct: builder.mutation({
       query: ({ product_id, user_id }) => ({
           url: `/products/${product_id}`,
@@ -41,6 +42,7 @@ export const appApi = createApi({
       }),
   }),
 
+  // update product
   updateProduct: builder.mutation({
       query: (product) => ({
           url: `/products/${product.id}`,
@@ -94,6 +96,18 @@ export const appApi = createApi({
 });
 
 
-export const { useSignupMutation, useLoginMutation, useCreateProductMutation, useAddToCartMutation, useRemoveFromCartMutation, useIncreaseCartProductMutation,useDecreaseCartProductMutation, useCreateOrderMutation } = appApi;
+
+export const {
+  useSignupMutation,
+  useLoginMutation,
+  useCreateProductMutation,
+  useAddToCartMutation,
+  useRemoveFromCartMutation,
+  useIncreaseCartProductMutation,
+  useDecreaseCartProductMutation,
+  useCreateOrderMutation,
+  useDeleteProductMutation,
+  useUpdateProductMutation,
+} = appApi;
 
 export default appApi;
