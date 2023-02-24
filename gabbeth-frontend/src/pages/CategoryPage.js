@@ -5,7 +5,7 @@ import { useParams } from "react-router-dom";
 import Loading from "../components/Loading";
 import ProductPreview from "../components/ProductPreview";
 import "./CategoryPage.css";
-//import Pagination from "../components/Pagination";
+import Pagination from "../components/Pagination";
 
 function CategoryPage() {
     const { category } = useParams();
@@ -51,7 +51,7 @@ function CategoryPage() {
                 <Container>
                     <Row>
                         <Col md={{ span: 10, offset: 1 }}>
-                            {/*<Pagination data={productsSearch} RenderComponent={ProductSearch} pageLimit={1} dataLimit={5} tablePagination={false} />*/}
+                            {<Pagination data={productsSearch} RenderComponent={ProductSearch} pageLimit={1} dataLimit={5} tablePagination={false} />}
                         </Col>
                     </Row>
                 </Container>

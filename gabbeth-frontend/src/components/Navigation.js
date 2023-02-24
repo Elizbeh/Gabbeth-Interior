@@ -4,6 +4,7 @@ import { Navbar, Button, Nav, NavDropdown, Container } from "react-bootstrap";
 import { useDispatch, useSelector } from "react-redux";
 import { LinkContainer } from "react-router-bootstrap";
 import { logout, resetNotifications } from "../features/userSlice";
+import CartPage from "../pages/CartPage";
 import "./Navigation.css";
 
 function Navigation() {
@@ -17,7 +18,7 @@ function Navigation() {
         dispatch(logout());
     }
     const unreadNotifications = user?.notifications?.reduce((acc, current) => {
-        if (current.status == "unread") return acc + 1;
+        if (current.status === "unread") return acc + 1;
         return acc;
     }, 0);
 
